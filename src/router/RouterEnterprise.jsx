@@ -1,12 +1,12 @@
 import React from "react"
 import { HashRouter, Routes, Route } from "react-router-dom"
-import routes from "./router.config"
+import routes from "./router.enterprise.config"
 
 export default function Router({ type }) {
   return (
     <HashRouter>
       <Routes>
-        {routes[type].map((route) => {
+        {routes.map((route) => {
           if (route.children) {
             return (
               <Route key={route.path} path={route.path} element={<route.component type={type} />}>

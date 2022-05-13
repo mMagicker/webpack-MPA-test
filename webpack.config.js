@@ -14,7 +14,6 @@ module.exports = {
   entry: {
     government: "./src/government",
     enterprise: "./src/enterprise",
-    index: "./src/index",
   },
   resolve: {
     extensions: [".js", ".jsx"],
@@ -54,11 +53,6 @@ module.exports = {
       title: "enterprise",
       filename: `${outputPath}/enterprise.html`,
       chunks: ["enterprise"],
-    }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./index.html"),
-      title: "index",
-      chunks: ["index"],
     }),
   ],
 }

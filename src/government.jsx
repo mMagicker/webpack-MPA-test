@@ -1,7 +1,7 @@
 import React from "react"
-import Router from "@/router"
+import RouterGovernment from "@/router/RouterGovernment"
 import { createRoot } from "react-dom/client"
 
 const container = document.getElementById("root")
 const root = createRoot(container)
-root.render(<Router type="government" />)
+root.render(<RouterGovernment type="government" />)
